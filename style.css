@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Agrandir-Regular";
+    src: url(./Agrandir-Font-Family/Agrandir\ -\ Free\ For\ Personal\ Use/Agrandir-Regular);
+}
+
+body{
+    background-color: #1E1E1E;
+    color: #fff;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    /* scrollbar-width: none; */
+    overflow-y:hidden;
+}
+
+main{
+    margin-block-start: 6em;
+    display: flex;
+    flex-direction: row;
+}
+
+section{
+    width: 25%;
+    height: 100%;
+}
+
+.blockOne{
+    height: 85.8vh;
+}
+
+.illustration{
+    padding-block-start: 10em;
+}
+
+.blockOne h1{
+    /* padding-inline-start: 1.5em; */
+    display: inline-block;
+    width: 70%;
+    font-size: 3em;
+    text-align: left;
+}
+
+.blockOne p{
+    /* padding-inline-start: 2.7em; */
+    display: inline-block;
+    width: 70%;
+    font-size: 1.625em;   
+    font-weight: 100;
+    text-align: left;
+    margin-block-start: 0.6em;
+}
+
+
+.oneInner{
+    /* padding-inline-start: 5em; */
+
+}
+
+.blockTwo{
+    background-image: url(./Rectangle\ 2.svg);
+    height: 85.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-block-end: 5em;
+    padding-inline-end:0 ;
+}
+
+.blockTwo h2{
+    font-size: 2.5em;
+    transform: rotate(-90deg);
+    /* position: relative;
+    top: 11em;
+    left: 3em; */
+   
+    /* transform: rotate(-90deg) translateX(-15em) translateY(3em); */
+}
+
+.blockThree{
+    background-color: #BB1010;
+    height: 85.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-inline-start: 2em;
+    padding-block-end: 1em;
+}
+
+.blockThree h2,p{
+    text-align: left;
+}
+
+.blockThree h2{
+    font-size: 2.5em;
+
+    margin-block-end: 0.2em;
+}
+
+.blockThree p{
+    text-align: left;
+    margin-block-end: 0.5em;
+}
+
+.blockFour{
+    background-image: url(./Rectangle\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.blockFour h2, p{
+    text-align: right;
+}
+
+.blockFour h2{
+    font-size: 4em;
+    font-weight: 900;
+    font-style:italic;
+}
+
+.blockFour p{
+    font-size: 2.5em;
+    /* margin-block-end: 0.5em; */
+    color: #4F8665;
+    font-weight:200;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+    body{
+        overflow-y: visible;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        width: 100%;
+    }
+    .illustration {
+    padding-block-start: 0em;
+}
+}
+
